@@ -12,7 +12,7 @@ class MainWindow(object):
     def __init__(self):
         super(MainWindow, self).__init__()
         self.builder = Gtk.Builder()
-        self.builder.add_from_file("gnome_password_manager.glade")
+        self.builder.add_from_file("gnome_password_manager.ui")
 
         self._connect_glade_objects()
         self._connect_signal_handlers()
